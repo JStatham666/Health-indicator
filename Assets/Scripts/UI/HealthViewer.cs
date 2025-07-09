@@ -6,7 +6,7 @@ public abstract class HealthViewer : MonoBehaviour
 
     private void OnEnable()
     {
-        //Health.ValueChanged += OnHealthChanged;
+        Health.ValueChanged += OnHealthChanged;
         OnHealthChanged();
     }
 
@@ -17,8 +17,7 @@ public abstract class HealthViewer : MonoBehaviour
 
     public void Init(Health health)
     {
-        Health = health;
-        Health.ValueChanged += OnHealthChanged;
+        Health = health;        
     }
 
     protected abstract void OnHealthChanged();
