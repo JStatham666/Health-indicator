@@ -4,7 +4,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public abstract class ButtonEvent : MonoBehaviour
 {
-    [SerializeField] protected Health Health;
     [SerializeField] protected int HealthAmount;
 
     private Button _button;
