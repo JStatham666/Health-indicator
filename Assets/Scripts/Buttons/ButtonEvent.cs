@@ -7,6 +7,7 @@ public abstract class ButtonEvent : MonoBehaviour
     [SerializeField] protected int HealthAmount;
 
     private Button _button;
+    protected Health Health;
 
     private void Awake()
     {
